@@ -1,4 +1,3 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<ng-container  *ngFor="let field of inputFields" >
+  <input id="field.name" [(ngMode)]="field.Model">
+</ng-container>
